@@ -1,0 +1,157 @@
+/* Timeline.css */
+.timeline-container {
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif; /* Or your specific font */
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Filter Boxes */
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 80px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+
+.filter-box.active {
+  border: 2px solid #333; /* Dark border for active */
+}
+
+.filter-label {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.filter-count {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Counts colors based on Figma */
+.filter-count.expired { color: #d32f2f; }
+.filter-count.soon { color: #1976d2; }
+.filter-count.renew { color: #388e3c; }
+
+/* Accordion Sections */
+.month-block {
+  border-bottom: 1px solid #eee;
+}
+
+.month-header {
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month-info strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.month-info span {
+  font-size: 12px;
+  color: #666;
+}
+
+.chevron {
+  color: #e60000; /* Vodafone Red styling */
+  transition: transform 0.3s;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Licence Content Area */
+.licence-list {
+  padding-bottom: 20px;
+}
+
+.licence-item {
+  margin-bottom: 24px;
+}
+
+.licence-name {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* The Multi-colored Grid Layout */
+.licence-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr; /* Adjust column widths */
+  border: 1px solid #ddd;
+}
+
+/* Header Row colors */
+.grid-header {
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white; /* Default text color for headers */
+}
+
+.header-date { background-color: #3c6677; } /* Dark Teal */
+.header-provider { background-color: #5a3355; } /* Dark Purple */
+.header-cost { background-color: #f4d055; color: #000; } /* Yellow - black text */
+.header-status { background-color: #f2f2f2; color: #000; } /* Light Gray - black text */
+
+/* Data Row */
+.grid-cell {
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+}
+
+.status-badge.expired {
+  background-color: #b71c1c; /* Dark Red */
+}
+.status-badge.renew {
+  background-color: #2e7d32; /* Green */
+}
+.status-badge.active {
+  background-color: #333;
+}
+
+.status-badge.expires-soon{
+  background-color: #1976d2;
+}
