@@ -15,7 +15,7 @@ class Session(db.Model):
 
     created_at = db.Column(
         db.DateTime,
-        default=datetime.now()
+        default=datetime.now
     )
 
     messages = db.relationship(
@@ -47,7 +47,7 @@ class Message(db.Model):
 
     created_at = db.Column(
         db.DateTime,
-        default=datetime.now()
+        default=datetime.now
     )
 
 

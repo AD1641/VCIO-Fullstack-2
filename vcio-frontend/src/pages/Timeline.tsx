@@ -12,21 +12,12 @@ type Licence = {
   status: "Expired" | "Renew" | "Active" | "Expires Soon";
 };
 
-type LicenceMonth = {
-  month: string;
-  licences: Licence[];
-};
 
 
-type TimelineProps = {
-  filteredLicences?: any;
-  expandedMonths?: any;
-  toggleMonth?: any;
-  filter?: any;
-  setFilter?: any;
-};
 
-export default function Timeline(props: TimelineProps) {
+
+
+export default function Timeline() {
 
   const [filter, setFilter] = useState("all");
   // Default "July 2025" to open so it looks like the screenshot immediately

@@ -35,15 +35,7 @@ export default function App() {
       <div className="app-container">
         {currentPage === "chat" && <ChatPage />}
         {currentPage === "dashboard" && <Dashboard />}
-        {currentPage === "timeline" && (
-          <Timeline
-            filteredLicences={[]} // TODO: Replace with actual filtered licences data
-            expandedMonths={[]} // TODO: Replace with actual expanded months state
-            toggleMonth={() => {}} // TODO: Replace with actual toggleMonth handler
-            filter="" // TODO: Replace with actual filter value
-            setFilter={() => {}} // TODO: Replace with actual setFilter handler
-          />
-        )}
+        {currentPage === "timeline" && <Timeline/>}
       </div>
     </>
   );
