@@ -5,3 +5,5 @@ Flask-CORS
 psycopg2-binary
 python-dotenv
 uuid6
+pytest
+pytest-flask

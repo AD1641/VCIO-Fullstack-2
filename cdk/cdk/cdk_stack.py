@@ -79,7 +79,7 @@ class FullstackStack(Stack):
                         "../../vcio-backend-python"
                     ),
 
-                    container_port=5000,
+                    container_port=8080,
 
                     environment={
                         "DB_HOST": database.db_instance_endpoint_address,

@@ -20,7 +20,7 @@ type Licence = {
 export default function Timeline() {
 
   const [filter, setFilter] = useState("all");
-  // Default "July 2025" to open so it looks like the screenshot immediately
+  
   const [expandedMonths, setExpandedMonths] = useState<string[]>(["July 2025"]);
 
   const [data, setData] = useState<any>(null);
