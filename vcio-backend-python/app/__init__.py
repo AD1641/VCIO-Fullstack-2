@@ -13,7 +13,6 @@ def create_app():
 
     app.config.from_object(Config)
 
-    #CORS(app, origins=["http://localhost:5173"])
     CORS(app, origins=[app.config["FRONTEND_URL"]])
 
     db.init_app(app)

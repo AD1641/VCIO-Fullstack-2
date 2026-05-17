@@ -12,18 +12,13 @@ type Licence = {
   status: "Expired" | "Renew" | "Active" | "Expires Soon";
 };
 
-
-
-
-
-
 export default function Timeline() {
 
   const [filter, setFilter] = useState("all");
   
-  const [expandedMonths, setExpandedMonths] = useState<string[]>(["July 2025"]);
+  const [expandedMonths, setExpandedMonths] = useState<string[]>(["May 2026"]);
 
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<{ licences: Licence[] } | null>(null)
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<any>(null);
 
