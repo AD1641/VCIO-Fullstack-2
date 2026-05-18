@@ -59,7 +59,6 @@ const COLORS = {
 };
 
 export default function Dashboard(): React.ReactElement {
-  const [message, setMessage] = useState("");
 
   return (
     <div className="dashboard-container">

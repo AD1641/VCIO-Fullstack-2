@@ -26,7 +26,7 @@ export default function ChatPage() {
     const fetchMessages = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/chat/${sessionId}`
+          `${import.meta.env.VITE_API_URL}/chat/${sessionId}`
         );
 
         const data = await response.json();
@@ -68,7 +68,7 @@ export default function ChatPage() {
     setIsTyping(true);
 
     try {
-      const response = await fetch("http://localhost:8080/chat", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

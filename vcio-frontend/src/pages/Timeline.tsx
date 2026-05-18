@@ -26,7 +26,7 @@ export default function Timeline() {
     const fetchLicences = async () => {
       try {
         const response = await fetch(
-          "http://localhost:8080/licences"
+          `${import.meta.env.VITE_API_URL}/licences`
         );
 
         const result = await response.json();
