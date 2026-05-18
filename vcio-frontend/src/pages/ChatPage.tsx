@@ -88,7 +88,7 @@ export default function ChatPage() {
         localStorage.setItem("sessionId", newSid);
       }
 
-      // Extract only the bot message
+      
       setTimeout(async () => {
         const refresh = await fetch(
           `http://localhost:8080/chat/${returnedMessages[0].sessionId}`
