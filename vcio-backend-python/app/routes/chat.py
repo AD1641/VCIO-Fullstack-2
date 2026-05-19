@@ -83,3 +83,17 @@ def get_messages(session_id):
         })
 
     return jsonify(result)
+
+@chat_bp.route("/chat/session/<session_id>", methods=["GET"])
+def validate_session(session_id):
+    
+    session = Session.query.get(session_id)
+    
+    if session:
+        return jsonify({
+            "Valid": True
+        }),200
+    
+    return jsonify({
+            "Valid": False
+        }),404

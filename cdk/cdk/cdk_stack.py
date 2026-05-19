@@ -16,7 +16,7 @@ from aws_cdk import (
 from constructs import Construct
 
 
-class FullstackStack(Stack):
+class CDKStack(Stack):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs):
         super().__init__(scope, construct_id, **kwargs)
